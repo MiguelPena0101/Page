@@ -1,0 +1,35 @@
+/* Media queries for responsive design */
+@media (max-width: 640px) {
+    .header-img {
+        display: none;
+    }
+}
+
+/* Custom Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
